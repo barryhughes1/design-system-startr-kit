@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salesforce Lightning Design System Starter Kit</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <!-- Prototype styles -->
+  <link rel="stylesheet" href="/styles/index.css" />
+</head>
+<body>
+  <!--
+    Base Global Header component
+    https://www.lightningdesignsystem.com/components/global-header/
+  -->
+  <header class="slds-global-header_container"><a href="javascript:void(0);" class="slds-assistive-text slds-assistive-text--focus">Skip to Navigation</a><a href="javascript:void(0);" class="slds-assistive-text slds-assistive-text--focus">Skip to Main Content</a>
+    <div class="slds-global-header slds-grid slds-grid--align-spread">
+      <div class="slds-global-header__item">
+        <div class="slds-global-header__logo">
+          <img src="/assets/images/logo-noname.svg" alt="" />
+        </div>
+      </div>
+      <div class="slds-global-header__item slds-global-header__item--search">
+        <div class="slds-form-element slds-lookup">
+          <label class="slds-assistive-text" for="global-search-01">Search Salesforce</label>
+          <div class="slds-form-element__control lookup__search-control slds-input-has-icon slds-input-has-icon--left">
+            <svg aria-hidden="true" class="slds-input__icon">
+              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+            </svg>
+            <input id="global-search-01" class="slds-input slds-lookup__search-input" type="search" placeholder="Search Salesforce" />
+          </div>
+        </div>
+      </div>
+      <ul class="slds-global-header__item slds-grid slds-grid--vertical-align-center">
+        <li class="slds-dropdown-trigger slds-dropdown-trigger--click slds-m-left--x-small">
+          <button class="slds-button" title="person name" aria-haspopup="true">
+            <span class="slds-avatar slds-avatar--circle slds-avatar--medium">
+              <img src="/assets/images/avatar2.jpg" alt="person name" />
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!--
+    Placeholder to push the context bar down
+  -->
+  <div class="app-header-placeholder"></div>
+
+  <!--
+    Navigation Bar component
+    https://www.lightningdesignsystem.com/components/global-navigation/
+  -->
+  <div class="slds-context-bar">
+    <div class="slds-context-bar__primary slds-context-bar__item_divider-right">
+      <div class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click slds-no-hover">
+        <div class="slds-context-bar__icon-action">
+          <button class="slds-button slds-icon-waffle_container slds-context-bar__button" title="Description of the icon when needed">
+            <span class="slds-icon-waffle">
+              <span class="slds-r1"></span>
+              <span class="slds-r2"></span>
+              <span class="slds-r3"></span>
+              <span class="slds-r4"></span>
+              <span class="slds-r5"></span>
+              <span class="slds-r6"></span>
+              <span class="slds-r7"></span>
+              <span class="slds-r8"></span>
+              <span class="slds-r9"></span>
+            </span>
+            <span class="slds-assistive-text">Open App Launcher</span>
+          </button>
+        </div>
+        <span class="slds-context-bar__label-action slds-context-bar__app-name">
+          <span class="slds-truncate" title="My Dashboard">My Dashboard</span>
+        </span>
+      </div>
+    </div>
+    <nav class="slds-context-bar__secondary" role="navigation">
+      <ul class="slds-grid">
+        <li class="slds-context-bar__item">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Home">
+            <span class="slds-truncate">Home</span>
+          </a>
+        </li>
+        <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--hover" aria-haspopup="true">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Groups">
+            <span class="slds-truncate">Groups</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left--none" tabindex="0">
+            <button class="slds-button slds-button--icon slds-context-bar__button" tabindex="-1">
+              <svg aria-hidden="true" class="slds-button__icon">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown--right">
+            <ul class="dropdown__list" role="menu">
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate">
+                    <svg aria-hidden="true" class="slds-icon slds-icon--x-small slds-icon-text-default slds-m-right--x-small">
+                      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#add"></use>
+                    </svg>Main action</span>
+                </a>
+              </li>
+              <li class="slds-dropdown__header slds-has-divider--top-space" role="separator">
+                <span class="slds-text-title--caps">Menu header</span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate">Menu Item One</span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate">Menu Item Two</span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate">Menu Item Three</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="slds-context-bar__item">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Contacts">
+            <span class="slds-truncate">Contacts</span>
+          </a>
+        </li>
+        <li class="slds-context-bar__item">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Files">
+            <span class="slds-truncate">Files</span>
+          </a>
+        </li>
+        <li class="slds-context-bar__item">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Chatter">
+            <span class="slds-truncate">Chatter</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <main class="app-wrapper">
+    
+
+<h2 class="slds-text-align--center slds-text-heading--large slds-m-around--large">
+  UAT Evaluation
+</h2>
+
+
+<div class="slds-box slds-theme_shade slds-m-around_large">
+  <div class="slds-form slds-form_stacked">
+      <fieldset class="slds-form-element">
+          <legend class="slds-form-element__legend slds-form-element__label">1. I didn&#39;t experience issues in my database related to the performance of software, hardware or network.</legend>
+          <div class="slds-form-element__control">
+                <span class="slds-radio">
+                  <input type="radio" id="radio-5" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-5">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Strongly Disagree</span>
+                  </label>
+                </span>
+                <span class="slds-radio">
+                  <input type="radio" id="radio-6" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-6">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Disagree</span>
+                  </label>
+                </span>
+                <span class="slds-radio">
+                    <input type="radio" id="radio-6" name="options" value="on" />
+                    <label class="slds-radio__label" for="radio-6">
+                      <span class="slds-radio_faux"></span>
+                      <span class="slds-form-element__label">No Opinion</span>
+                    </label>
+                </span>
+                <span class="slds-radio">
+                  <input type="radio" id="radio-6" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-6">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Agree</span>
+                  </label>
+                </span>
+                <span class="slds-radio">
+                  <input type="radio" id="radio-6" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-6">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Strongly Agree</span>
+                  </label>
+                </span>                     
+          </div>
+        </fieldset>
+        <div class="slds-form-element">
+            <label class="slds-form-element__label slds-assistive-text" for="input-id-01">Please add any further comments</label>
+            <div class="slds-form-element__control">
+              <input type="text" id="input-id-01" class="slds-input" placeholder="Please add any further comments" />
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+<div class="slds-box slds-theme_shade slds-m-around_large">
+  <div class="slds-form slds-form_stacked">
+      <fieldset class="slds-form-element">
+          <legend class="slds-form-element__legend slds-form-element__label">2. The combination of the UPK &quot;Try It&quot; mode and the business processes will be sufficient documentation for me to perform my day to day activities after the upgrade is complete</legend>
+          <div class="slds-form-element__control">
+                <span class="slds-radio">
+                  <input type="radio" id="radio-5" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-5">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Strongly Disagree</span>
+                  </label>
+                </span>
+                <span class="slds-radio">
+                  <input type="radio" id="radio-6" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-6">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Disagree</span>
+                  </label>
+                </span>
+                <span class="slds-radio">
+                    <input type="radio" id="radio-6" name="options" value="on" />
+                    <label class="slds-radio__label" for="radio-6">
+                      <span class="slds-radio_faux"></span>
+                      <span class="slds-form-element__label">No Opinion</span>
+                    </label>
+                </span>
+                <span class="slds-radio">
+                  <input type="radio" id="radio-6" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-6">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Agree</span>
+                  </label>
+                </span>
+                <span class="slds-radio">
+                  <input type="radio" id="radio-6" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-6">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Strongly Agree</span>
+                  </label>
+                </span>                     
+          </div>
+        </fieldset>
+        <div class="slds-form-element">
+            <label class="slds-form-element__label slds-assistive-text" for="input-id-01">Please add any further comments</label>
+            <div class="slds-form-element__control">
+              <input type="text" id="input-id-01" class="slds-input" placeholder="Please add any further comments" />
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+<div class="slds-box slds-theme_shade slds-m-around_large">
+  <div class="slds-form slds-form_stacked">
+      <fieldset class="slds-form-element">
+          <legend class="slds-form-element__legend slds-form-element__label">3. The tests conducted during UAT and in homework were representative of the major business processes my institution will perform on a recurring basis.</legend>
+          <div class="slds-form-element__control">
+                <span class="slds-radio">
+                  <input type="radio" id="radio-5" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-5">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Strongly Disagree</span>
+                  </label>
+                </span>
+                <span class="slds-radio">
+                  <input type="radio" id="radio-6" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-6">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Disagree</span>
+                  </label>
+                </span>
+                <span class="slds-radio">
+                    <input type="radio" id="radio-6" name="options" value="on" />
+                    <label class="slds-radio__label" for="radio-6">
+                      <span class="slds-radio_faux"></span>
+                      <span class="slds-form-element__label">No Opinion</span>
+                    </label>
+                </span>
+                <span class="slds-radio">
+                  <input type="radio" id="radio-6" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-6">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Agree</span>
+                  </label>
+                </span>
+                <span class="slds-radio">
+                  <input type="radio" id="radio-6" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-6">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Strongly Agree</span>
+                  </label>
+                </span>                     
+          </div>
+        </fieldset>
+        <div class="slds-form-element">
+            <label class="slds-form-element__label slds-assistive-text" for="input-id-01">Please add any further comments</label>
+            <div class="slds-form-element__control">
+              <input type="text" id="input-id-01" class="slds-input" placeholder="Please add any further comments" />
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+<div class="slds-box slds-theme_shade slds-m-around_large">
+  <div class="slds-form slds-form_stacked">
+      <fieldset class="slds-form-element">
+          <legend class="slds-form-element__legend slds-form-element__label">4. I didn&#39;t experience issues in my database related to the performance of software, hardware or network.</legend>
+          <div class="slds-form-element__control">
+                <span class="slds-radio">
+                  <input type="radio" id="radio-5" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-5">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Strongly Disagree</span>
+                  </label>
+                </span>
+                <span class="slds-radio">
+                  <input type="radio" id="radio-6" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-6">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Disagree</span>
+                  </label>
+                </span>
+                <span class="slds-radio">
+                    <input type="radio" id="radio-6" name="options" value="on" />
+                    <label class="slds-radio__label" for="radio-6">
+                      <span class="slds-radio_faux"></span>
+                      <span class="slds-form-element__label">No Opinion</span>
+                    </label>
+                </span>
+                <span class="slds-radio">
+                  <input type="radio" id="radio-6" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-6">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Agree</span>
+                  </label>
+                </span>
+                <span class="slds-radio">
+                  <input type="radio" id="radio-6" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-6">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Strongly Agree</span>
+                  </label>
+                </span>                     
+          </div>
+        </fieldset>
+        <div class="slds-form-element">
+            <label class="slds-form-element__label slds-assistive-text" for="input-id-01">Please add any further comments</label>
+            <div class="slds-form-element__control">
+              <input type="text" id="input-id-01" class="slds-input" placeholder="Please add any further comments" />
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+<div class="slds-box slds-theme_shade slds-m-around_large">
+  <div class="slds-form slds-form_stacked">
+      <fieldset class="slds-form-element">
+          <legend class="slds-form-element__legend slds-form-element__label">5. I didn&#39;t experience issues in my database related to the performance of software, hardware or network.</legend>
+          <div class="slds-form-element__control">
+                <span class="slds-radio">
+                  <input type="radio" id="radio-5" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-5">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Strongly Disagree</span>
+                  </label>
+                </span>
+                <span class="slds-radio">
+                  <input type="radio" id="radio-6" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-6">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Disagree</span>
+                  </label>
+                </span>
+                <span class="slds-radio">
+                    <input type="radio" id="radio-6" name="options" value="on" />
+                    <label class="slds-radio__label" for="radio-6">
+                      <span class="slds-radio_faux"></span>
+                      <span class="slds-form-element__label">No Opinion</span>
+                    </label>
+                </span>
+                <span class="slds-radio">
+                  <input type="radio" id="radio-6" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-6">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Agree</span>
+                  </label>
+                </span>
+                <span class="slds-radio">
+                  <input type="radio" id="radio-6" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-6">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Strongly Agree</span>
+                  </label>
+                </span>                     
+          </div>
+        </fieldset>
+        <div class="slds-form-element">
+            <label class="slds-form-element__label slds-assistive-text" for="input-id-01">Please add any further comments</label>
+            <div class="slds-form-element__control">
+              <input type="text" id="input-id-01" class="slds-input" placeholder="Please add any further comments" />
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+<div class="slds-box slds-theme_shade slds-m-around_large">
+  <div class="slds-form slds-form_stacked">
+      <fieldset class="slds-form-element">
+          <legend class="slds-form-element__legend slds-form-element__label">6. I didn&#39;t experience issues in my database related to the performance of software, hardware or network.</legend>
+          <div class="slds-form-element__control">
+                <span class="slds-radio">
+                  <input type="radio" id="radio-5" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-5">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Strongly Disagree</span>
+                  </label>
+                </span>
+                <span class="slds-radio">
+                  <input type="radio" id="radio-6" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-6">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Disagree</span>
+                  </label>
+                </span>
+                <span class="slds-radio">
+                    <input type="radio" id="radio-6" name="options" value="on" />
+                    <label class="slds-radio__label" for="radio-6">
+                      <span class="slds-radio_faux"></span>
+                      <span class="slds-form-element__label">No Opinion</span>
+                    </label>
+                </span>
+                <span class="slds-radio">
+                  <input type="radio" id="radio-6" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-6">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Agree</span>
+                  </label>
+                </span>
+                <span class="slds-radio">
+                  <input type="radio" id="radio-6" name="options" value="on" />
+                  <label class="slds-radio__label" for="radio-6">
+                    <span class="slds-radio_faux"></span>
+                    <span class="slds-form-element__label">Strongly Agree</span>
+                  </label>
+                </span>                     
+          </div>
+        </fieldset>
+        <div class="slds-form-element">
+            <label class="slds-form-element__label slds-assistive-text" for="input-id-01">Please add any further comments</label>
+            <div class="slds-form-element__control">
+              <input type="text" id="input-id-01" class="slds-input" placeholder="Please add any further comments" />
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+                                
+
+
+<div class="slds-box slds-m-around_x-small">
+  <div class="slds-grid slds-wrap">
+    <div class="slds-size_5-of-6">
+      <span class="slds-checkbox">
+          <input type="checkbox" name="default" id="checkbox-1" value="on" />
+          <label class="slds-checkbox__label" for="checkbox-1">
+            <span class="slds-checkbox_faux"></span>
+            <span class="slds-form-element__label slds-m-left_large">I accept the terms of use and participation in this questionnaire</span>
+          </label>
+        </span>      
+    </div>
+    <div class="slds-size_1-of-6">
+      <div class="slds-text-align_right">
+          <button class="slds-button slds-button_brand">
+              <svg class="slds-button__icon slds-button__icon_left" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#answer" />
+              </svg>Mark Complete</button>          
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </main>
+  <script src="/scripts/app.js"></script>
+  <script src="/scripts/vendor/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
+</body>
+</html>
